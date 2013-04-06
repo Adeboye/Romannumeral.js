@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">	
+<link rel="stylesheet" type="text/css" href="romancss.css" title="default">
+<script type="text/javascript" src="jquery-1.9.1.js"></script>	
+<script type="text/javascript" src="romannumeral.js"></script>
+<title>ROMAN NUMERAL CONVERTER</title>
+</head>
+<body>
+<script>
+	$(document).ready(function () {
+	$('#form3').on('click', function (ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    var ans = initializer();
+    $('#form6').val(ans); 
+	});
+});
+</script>	
+
+<h1>Roman Numeral Calculator</h1>
+<div id="startPanel">
+<div id="outer_box" class="">
+<p class="title">ENTER ROMAN NUMERALS</p>
+<form id="form1" class="input_box" >
+	<input type="text" id="form2" class="" autofocus="autofocus" autocomplete="off"/>  
+	<br /><br />
+	<input type="button" name="button" id="form3" class="spec_ipnut" value="+">
+	<br /><br /> 
+	<input type="text" id="form4" class="" autocomplete="off"/> 
+	<br /><br />  
+	<input type="button" name="button2" id="form5" class="spec_ipnut" value="=">
+	<br /><br /> 
+	<input type="text" name="result" id="form6" class=""></input>	
+</form>
+</div>
+</div>
+</body>
+</html>
